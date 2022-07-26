@@ -1,4 +1,4 @@
-html{
+html {
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 16px;
@@ -6,13 +6,13 @@ html{
 
 *,
 *:after,
-*:before{
+*:before {
   box-sizing: inherit;
 }
 
-body{
+body {
   margin: 0;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -20,20 +20,20 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover{
-  color: #00b0ff
+a:hover {
+  color: #00b0ff;
 }
 
 h1 {
   text-align: center;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-.error{
+.error {
   padding: 1rem;
   font-size: 150%;
   font-weight: bold;
@@ -42,12 +42,20 @@ img{
   background-color: #dc3545;
 }
 
-.form-search{
+.error mark {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  color: #fff;
+  background-color: #01579b;
+}
+
+.form-search {
   margin: auto;
   text-align: center;
 }
 
-.form-search input{
+.form-search input {
   display: block;
   margin: auto;
   padding: 0.25rem;
@@ -55,14 +63,14 @@ img{
   font-size: 1rem;
 }
 
-.grid-fluid{
+.grid-fluid {
   margin: 1rem auto;
   max-width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.header{
+.header {
   padding: 0.5rem;
   position: sticky;
   top: 0;
@@ -74,7 +82,7 @@ img{
   margin: 1rem auto;
 }
 
-.loader{
+.loader {
   margin: 1rem auto;
   display: block;
   width: 4rem;
@@ -91,4 +99,41 @@ img{
 .post-card p {
   display: flex;
   justify-content: space-between;
+}
+
+.post-page {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: #eceff1;
+}
+
+.post-page > aside {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.post-page > hr {
+  border: thin solid #cfd8dc;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.post-page time {
+  margin: 1rem auto;
+  display: block;
+}
+
+.post-page > article {
+  padding: 0 2rem;
+}
+
+.post-page img,
+.post-page audio,
+.post-page iframe,
+.post-page video {
+  margin: auto;
+  display: block;
+  max-width: 100%;
 }
